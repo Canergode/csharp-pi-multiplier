@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PiMultiplier 
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Get number from user
+            Console.WriteLine("Enter a value between 1 and 5:");
+            int input = Convert.ToInt32(Console.ReadLine());
+
+            // Get integer value of PI using Math.PI
+            double piValue = Math.PI;
+            int piAsInt = Convert.ToInt32(piValue);
+
+            // Multiply and print result 
+            Console.WriteLine(piAsInt * input);
+            Console.ReadLine(); 
+        }
+
+    }
+
+}
